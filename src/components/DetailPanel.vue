@@ -101,7 +101,7 @@
               <h3>{{ isEn ? 'Ionization Energy (kJ/mol)' : '电离能 (kJ/mol)' }}</h3>
               <div class="ionization-list">
                 <div v-for="(ie, i) in element.ionization_energies.slice(0, 6)" :key="i" class="ionization-item">
-                  <span class="ion-label">{{ (isEn ? 'Level ' : '第 ') + (i + 1) + (isEn ? '' : ' 级') }}</span>
+                  <span class="ion-label">{{ isEn ? 'Level ' + (i + 1) : '第 ' + (i + 1) + ' 级' }}</span>
                   <span class="ion-value">{{ ie }}</span>
                 </div>
               </div>

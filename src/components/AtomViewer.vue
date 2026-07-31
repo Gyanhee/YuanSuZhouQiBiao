@@ -50,7 +50,7 @@
         <div class="expanded-legend">
           <div v-for="(count, i) in shells" :key="i" class="expanded-shell-item" :class="{ valence: i === shells.length - 1 }">
             <span class="shell-dot" :class="i === shells.length - 1 ? 'valence' : 'inner'"></span>
-            {{ lang === 'en' ? ('Shell ' + (i+1) + ': ' + count + ' electron' + (count > 1 ? 's' : '') + (i === shells.length - 1 ? ' (valence)' : '')) : ('第' + (i+1) + '层：' + count + ' 个电子' + (i === shells.length - 1 ? '（价电子层）' : '')) }}
+            {{ lang === 'en' ? `Shell ${i+1}: ${count} electron${count > 1 ? 's' : ''}${i === shells.length - 1 ? ' (valence)' : ''}` : `第${i+1}层：${count} 个电子${i === shells.length - 1 ? '（价电子层）' : ''}` }}
           </div>
         </div>
       </div>
