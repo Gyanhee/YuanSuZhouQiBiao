@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd *kimi-vision* && node vision.js *)",
+      "Bash(cd *kimi-vision* && node latest.js *)",
+      "Bash(node vision.js *)",
+      "Bash(node latest.js *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(cat *)",
+      "Bash(echo *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(curl *)",
+      "Bash(sleep *)",
+      "Bash(npm *)",
+      "Read(**)",
+      "Bash(node C:/Users/熊艳霞/.claude/kimi-vision/vision.js C:/Users/熊艳霞/.claude/kimi-vision/latest.js)",
+      "Bash(node latest.js)",
+      "Bash(node -e \"const d=require\\('./src/data/elements.json'\\);const cats=[...new Set\\(d.elements.map\\(e=>e.category\\)\\)];console.log\\(cats\\)\")",
+      "Bash(node -e \"const d=require\\('./src/data/elements.json'\\);const cats=d.elements.reduce\\(\\(m,e\\)=>{const c=e.category;if\\(!m[c]\\)m[c]=[];m[c].push\\(e.symbol\\);return m},{}\\)['unknown, probably transition metal'];console.log\\(cats\\)\")",
+      "Bash(node -e \"const d=require\\('./src/data/elements.json'\\);const la=d.elements.filter\\(e=>e.number>=57&&e.number<=71\\).map\\(e=>\\({sym:e.symbol,x:e.xpos,y:e.ypos}\\)\\);const ac=d.elements.filter\\(e=>e.number>=89&&e.number<=103\\).map\\(e=>\\({sym:e.symbol,x:e.xpos,y:e.ypos}\\)\\);console.log\\('La系列:',JSON.stringify\\(la\\)\\);console.log\\('Ac系列:',JSON.stringify\\(ac\\)\\)\")",
+      "Bash(node -e \"const d=require\\('./src/data/elements.json'\\);const rows=[...new Set\\(d.elements.map\\(e=>e.ypos\\)\\)].sort\\(\\(a,b\\)=>a-b\\);console.log\\('所有行:',rows\\)\")",
+      "Bash(node -e \"const d=require\\('./src/data/elements.json'\\);const els=d.elements.filter\\(e=>[57,89].includes\\(e.number\\)\\).map\\(e=>\\({sym:e.symbol,num:e.number,x:e.xpos,y:e.ypos}\\)\\);console.log\\(els\\)\")",
+      "WebFetch(domain:xhslink.cn)",
+      "WebSearch",
+      "WebFetch(domain:seanwong17.github.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.aiersheng.cc)",
+      "WebFetch(domain:mp.weixin.qq.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
